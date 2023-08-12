@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>My Personal Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+            <h1 class="logo"><a href="index.html"><img src="img/DM_ my logo.png" alt=""></a></h1>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="toggle" id="bars">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+            </label>
+            <ul>
+                <div class="list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="container">
+            <div class="item_home">
+                <div data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="600" class="me">
+                    <div class="content">
+                        <h2>Hi,</h2>
+                        <h1>I'm <span class="typing">Dan Mark</span></h1>
+                        <p>Driven Individual Seeking Challenging Role to Excel and Learn</p>
+                        <button class="dl"><a download href="cv/My CV Resume.pdf">Download CV</a></button>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="3000" class="mypic">
+                    <img src="img/mecrop.png" class="pic">
+                    <img src="img/blobanimation.svg" class="blob" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="item_about">
+            <div data-aos="zoom-in-down" data-aos-duration="1500" class="devme">
+                <img src="img/devgif.gif" alt="">
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500" class="info">
+                <h1>About Me</h1>
+                <p>I aspire to be in a position that challenges my limits as an individual, fulfills my qualifications, and allows me to achieve excellence. I aim to apply the knowledge I have gained from past experiences and to continually learn and share my understanding.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="item_projects">
+            <div data-aos="fade-up" data-aos-duration="3000" class="heading">
+                <h1>My Projects</h1>
+                <h3>(Capstone Projects)</h3>
+            </div>
+            <div class="cards">
+                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="card_containerOne">
+                    <div class="card">
+                        <!-- <video src="img/Finals vid.mp4" autoplay></video> -->
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+                        <div class="card__content">
+                        <p class="card__title">WEMIS
+                        </p><p class="card__description">A Web-based Employee Maturation Information System for School Division Office of DepEd Muntinlupa</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="card_containerTwo">     
+                    <div class="card">
+                        <img src="img/ekg.png.png" alt="">
+                        <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg> -->
+                        <div class="card__content">
+                        <p class="card__title">LMS with QR CODE
+                        </p><p class="card__description">Leave Management System with QR Code Attendance</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="tools">
+                <h1 class="animate__animated animate__bounce">Things I used in the system</h1>
+                <div class="usetools">
+                    <i class='bx bxl-html5' style="color: #f75421;"></i>
+                    <i class='bx bxl-css3' style="color: #2862e9;"></i>
+                    <i class='bx bxl-javascript' style='color: #e8d44d' ></i>
+                    <i class='bx bxl-php' style='color:#7377ad' ></i>
+                    <i class='bx bxs-data' style='color:#ea8c10' ></i>
+                </div>
+            </div>      
+        </div>
+    </section>
+    <section id="contacts">
+        <div class="item_contacts">
+            <form data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="form" action="https://formspree.io/f/xzblzvld" method="POST">
+                <div class="title">Contact us</div>
+                <input type="email" name="email" placeholder="Your email" class="input">
+                <textarea placeholder="Your message" name="message"></textarea>
+                 
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+            <li><a href="https://www.facebook.com/dmrcvn/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://instagram.com/dnmrk_?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://twitter.com/dnmrkcrvn"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+        <p>Copyright 2023 | Caravana, Dan Mark R.</p>
+    </footer>
+
+
+
+    <!-- JS -->
+    <script src="js/typing.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
