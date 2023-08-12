@@ -16,20 +16,26 @@
     <header>
         <nav data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
             <h1 class="logo"><a href="index.html"><img src="img/DM_ my logo.png" alt=""></a></h1>
-            <input type="checkbox" id="checkbox">
-            <label for="checkbox" class="toggle" id="bars">
-                <div class="bars" id="bar1"></div>
-                <div class="bars" id="bar2"></div>
-                <div class="bars" id="bar3"></div>
-            </label>
-            <ul>
-                <div class="list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </div>
-            </ul>
+            <div class="burgerSwitch">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle" id="bars">
+                    <div class="bars" id="bar1"></div>
+                    <div class="bars" id="bar2"></div>
+                    <div class="bars" id="bar3"></div>
+                </label>
+                <ul>
+                    <div class="list" id="list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </div>
+                </ul>
+                <label class="switch">
+                    <input type="checkbox" id="btnDark">
+                    <span class="slider"></span>
+                </label>
+            </div>
         </nav>
     </header>
     <section id="home">
@@ -138,6 +144,7 @@
 
 
     <!-- JS -->
+    <script src="js/darkmode.js"></script>
     <script src="js/typing.js"></script>
     <script src="js/nav.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
