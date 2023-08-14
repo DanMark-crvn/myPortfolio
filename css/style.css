@@ -824,6 +824,7 @@ header nav .switch{
 .modal.show{
     opacity: 1;
     pointer-events: auto;
+    z-index: 100;
 }
 .modal__inner{
     background-color: #fff;
@@ -855,7 +856,49 @@ header nav .switch{
 .modal__content{
     padding: var(--gap);
     line-height: 1.5;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1%;
 }
+/** PERSONAL PROJECTS**/
+.modal__content .box{
+    /* border: 1px solid green; */
+    height: 300px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+}
+.modal__content .box h1{
+    /* border: 1px solid red; */
+    padding: 2%;
+}
+.modal__content .box .box_content{
+    /* border: 1px solid purple; */
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    height: 200px;
+    margin: 2%;
+}
+.modal__content .box .box_content a img{
+    position: relative;
+    /* border: 1px solid red; */
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 170px;
+    margin: 5%;
+}
+.modal__content .box .box_content a img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
 .modal__bottom{
     text-align: right;
     padding: 0 var(--gap) var(--gap) var(--gap);   
