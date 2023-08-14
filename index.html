@@ -119,6 +119,81 @@
             </form>
         </div>
     </section>
+    <!-------------------------- MODALS -------------------------------->
+    <section id="modal">
+        <div class="modal" id="modal_container">
+            <div class="modal__inner">
+                <div class="modal__top">
+                    <div class="modal__title">
+                        Sample Modal Title
+                    </div>
+                    <button class="modal__close" type="button" id="close">
+                        <span><i class='bx bx-x' style='color:#333333'  ></i></span>
+                    </button>
+                </div>
+                <div class="modal__content">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis expedita odit nesciunt vitae eligendi eum nemo cupiditate possimus nisi harum quae, deleniti ad illum animi dolore quibusdam! Voluptate, corporis nobis.</p>
+                </div>
+                <div class="modal__bottom">
+                    <button class="modal__button" type="button">Okay!</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal_containerAbout">
+            <div class="modal__inner">
+                <div class="modal__top">
+                    <div class="modal__title">
+                        Sample Modal Title About
+                    </div>
+                    <button class="modal__close" type="button" id="closeAbout">
+                        <span><i class='bx bx-x' style='color:#333333'  ></i></span>
+                    </button>
+                </div>
+                <div class="modal__content">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis expedita odit nesciunt vitae eligendi eum nemo cupiditate possimus nisi harum quae, deleniti ad illum animi dolore quibusdam! Voluptate, corporis nobis.</p>
+                </div>
+                <div class="modal__bottom">
+                    <button class="modal__button" type="button">Okay!</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal_containerProjects">
+            <div class="modal__inner">
+                <div class="modal__top">
+                    <div class="modal__title">
+                        Sample Modal Title Projects
+                    </div>
+                    <button class="modal__close" type="button" id="closeProjects">
+                        <span><i class='bx bx-x' style='color:#333333'  ></i></span>
+                    </button>
+                </div>
+                <div class="modal__content">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis expedita odit nesciunt vitae eligendi eum nemo cupiditate possimus nisi harum quae, deleniti ad illum animi dolore quibusdam! Voluptate, corporis nobis.</p>
+                </div>
+                <div class="modal__bottom">
+                    <button class="modal__button" type="button">Okay!</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal_containerContact">
+            <div class="modal__inner">
+                <div class="modal__top">
+                    <div class="modal__title">
+                        Sample Modal Title Contact
+                    </div>
+                    <button class="modal__close" type="button" id="closeContact">
+                        <span><i class='bx bx-x' style='color:#333333'  ></i></span>
+                    </button>
+                </div>
+                <div class="modal__content">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis expedita odit nesciunt vitae eligendi eum nemo cupiditate possimus nisi harum quae, deleniti ad illum animi dolore quibusdam! Voluptate, corporis nobis.</p>
+                </div>
+                <div class="modal__bottom">
+                    <button class="modal__button" type="button">Okay!</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="waves">
             <div class="wave" id="wave1"></div>
@@ -133,10 +208,10 @@
             <li><a href="https://github.com/Otnadnad"><ion-icon name="logo-github"></ion-icon></a></li>
         </ul>
         <ul class="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contacts">Contact</a></li>
+            <li><a href="#" id="openModal">Home</a></li>
+            <li><a href="#" id="openModalAbout">About</a></li>
+            <li><a href="#" id="openModalProjects">Projects</a></li>
+            <li><a href="#" id="openModalContact">Contact</a></li>
         </ul>
         <p>Copyright 2023 | Caravana, Dan Mark R.</p>
     </footer>
@@ -147,6 +222,7 @@
     <script src="js/darkmode.js"></script>
     <script src="js/typing.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

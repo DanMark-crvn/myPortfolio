@@ -246,6 +246,10 @@ header nav .switch{
     margin: 0% 2%; */
     overflow: hidden;
 }
+/* #modal{
+    border: 1px solid cyan;
+    margin: 0% 5%;
+} */
 
 
 /***************HOME******************/
@@ -472,14 +476,16 @@ header nav .switch{
     position: relative;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: 0% 2%;
 }
 .item_projects .heading{
     /* border: 1px solid brown; */
-    margin: 7% 2%;
+    margin: 2% 2%;
+    font-size: 1.3em;
 }
 .item_projects .cards{
     /* border: 1px solid red; */
-    margin: 2% 2%;
+    margin: 1% 2%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -498,8 +504,8 @@ header nav .switch{
 }
 .card_containerOne{
     /* border: 1px solid purple; */
-    margin: 2%;
-    padding: 3%;
+    margin: 0% 2%;
+    padding: 2%;
     display: flex;
     flex-direction: row;
     flex-grow: 1;
@@ -508,8 +514,8 @@ header nav .switch{
 }
 .card_containerTwo{
     /* border: 1px solid red; */
-    margin: 2%;
-    padding: 3%;
+    margin: 0% 2%;
+    padding: 2%;
     display: flex;
     flex-direction: row;
     flex-grow: 1;
@@ -797,7 +803,77 @@ header nav .switch{
     }
   }
 
-  
+/*********MODAL**************/
+.modal{
+    /* border: 1px solid red; */
+    --gap: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: var(--gap);
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+}
+.modal.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal__inner{
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.modal__top{
+    display: flex;
+    align-items: center;
+    background-color: #eeeeee;
+}
+.modal__title{
+    flex-grow: 1;
+    padding: 0 var(--gap);
+    font-size: 20px;
+}
+.modal__close{
+    display: flex;
+    align-items: center;
+    font-size: 1.7em;
+    cursor: pointer;
+    padding: var(--gap);
+    background: none;
+    border: none;
+    outline: none;
+}
+.modal__content{
+    padding: var(--gap);
+    line-height: 1.5;
+}
+.modal__bottom{
+    text-align: right;
+    padding: 0 var(--gap) var(--gap) var(--gap);   
+}
+.modal__button{
+    display: inline-block;
+    padding: 6px 12px;
+    background: #009570;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: #ffff;
+    cursor: pointer;
+    font-size: 18px;
+}
+.modal__button:hover{
+    background: #008066;
+}
 /*================ MEDIA QUERIES ==================*/
 
 /* Extra small devices (phones, 600px and down) */
