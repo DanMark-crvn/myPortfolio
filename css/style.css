@@ -864,6 +864,50 @@ header nav .switch{
     flex-wrap: wrap;
     margin-bottom: 1%;
 }
+/*** MY SKILLS ***/
+.modal__content .skills{
+    /* border: 1px solid red; */
+    height: 350px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.modal_content .skills, .h1skills{
+    /* border: 1px solid green; */
+    width: 100%;
+    margin: 0% 1%;
+    padding: 2%;
+    text-align: center;
+}
+.modal_content .skills, .item_skills{
+    /* border: 1px solid salmon; */
+    padding: 2%;
+    width: 100%;
+    margin: 0% 1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal_content .skills, .h2skills{
+    /* border: 1px solid cyan; */
+    margin: 0% 1%;
+    color: #333;
+    font-size: 17px;
+    text-align: justify;
+}
+.modal_content .skills, #iskills{
+    /* border: 1px solid brown; */
+    font-size: 3em;
+    transition: 0.3s;
+}
+.modal_content .skills, #iskills:hover{
+    transform: translateY(-10px);
+}
+
 /** PERSONAL PROJECTS**/
 .modal__content .box{
     /* border: 1px solid green; */
