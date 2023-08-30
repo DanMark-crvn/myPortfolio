@@ -949,11 +949,26 @@ header nav .switch{
 /** PERSONAL PROJECTS**/
 .modal__content .box{
     /* border: 1px solid green; */
-    height: 300px;
+    height: 400px;
     width: 100%;
     border-radius: 5px;
     position: relative;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #a0a0a0 #f0f0f0; 
 }
+.modal__content .box::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+.modal__content .box::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* Color of the scrollbar track */
+}
+
+.modal__content .box::-webkit-scrollbar-thumb {
+background-color: #a0a0a0; /* Color of the scrollbar thumb */
+border-radius: 4px; /* Rounded corners for the thumb */
+}
+
 .modal__content .box h1{
     /* border: 1px solid red; */
     padding: 2%;
@@ -975,6 +990,15 @@ header nav .switch{
     width: 170px;
     margin: 5%;
 }
+.modal__content .box .box_content a .login{
+    position: relative;
+    /* border: 1px solid purple; */
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 350px;
+    margin: 2%;
+}
+
 .modal__content .box .box_content a img:hover{
     transform: scale(1.1);
     cursor: pointer;
