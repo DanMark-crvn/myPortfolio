@@ -752,6 +752,7 @@ header nav .switch{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
   }
   footer .social_icon, 
   footer .menu{
@@ -901,6 +902,7 @@ header nav .switch{
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 1%;
+    overflow: auto;
 }
 /*** MY SKILLS ***/
 .modal__content .skills{
